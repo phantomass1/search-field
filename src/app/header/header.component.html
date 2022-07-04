@@ -1,0 +1,69 @@
+<nav>
+  <div>
+    <ul class="main">
+      <li><img class="menu" src="assets/menu.png"></li>
+      <li class="picture"><img class="logo" src="assets/logo.png"></li>
+      <li>
+        <div id="change">
+      <li>Ссылки
+        <img class="arrow" src="assets/arrow-down.png">
+      </li>
+      <li>Контакты</li>
+      <li>Теги
+        <img class="arrow" src="assets/arrow-down.png">
+      </li>
+      <li>Просьбы
+        <img class="arrow" src="assets/arrow-down.png">
+      </li>
+      <li>Избранное
+        <img class="arrow" src="assets/arrow-down.png">
+      </li>
+      <li>Посещения
+        <img class="arrow" src="assets/arrow-down.png">
+      </li>
+  </div>
+  </li>
+  <li class="fix">
+    <div class="search">
+      <form action="#">
+        <input class="mainsearch" (focus)="onFocus()"  type="text" name="search">
+        <div id="filter">
+              <input id="my" type="checkbox">
+              <label for="my">Мои</label>
+              <input type="text" name="search" placeholder="Автор">
+              <ul class="sort">
+                <li>Сортировать по: </li>
+                <li>
+                  <select disabled>
+                    <option>Дате</option>
+                  </select>
+                </li>
+              </ul>
+              <ul class="check">
+                <li>
+                  <input id="part" type="checkbox">
+                  <label for="part">я участник</label>
+                </li>
+                <li>
+                  <input id="hedears" type="checkbox">
+                  <label for="hedears">в заголовке</label>
+                </li>
+                <li>
+                  <input id="straight" type="checkbox">
+                  <label for="straight">строгий поиск</label>
+                </li>
+              </ul>
+        </div>
+       <button id="submit" (click)="onClick($event)"><img class="icon" src="assets/search-button.png"></button>
+      </form>
+    </div>
+  </li>
+    <li id="fix"><img class="icon" src="assets/add.png"></li>
+    <ul id="right">
+      <li><img class="icon" src="assets/mail.png"></li>
+      <li><img class="icon" src="assets/notification.png"></li>
+      <li><img class="icon" src="assets/avatar.png"></li>
+    </ul>
+  </ul>
+  </div>
+</nav>

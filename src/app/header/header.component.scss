@@ -1,0 +1,207 @@
+nav {
+  margin: 0 0;
+  padding: 10px;
+  height: 60px;
+  background-color:	#1E90FF;
+}
+
+#right{
+  float: right;
+  padding:0;
+  margin:0;
+  list-style: none;
+  position: relative;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+}
+.main{
+  padding:20px;
+  margin:0;
+  list-style: none;
+}
+
+.main li {
+  display:inline-block;
+  background-color:	#1E90FF;
+  color: white;
+}
+.main .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+.main li:hover > ul {
+  display:inherit;
+}
+
+.main .dropdown li {
+  min-width:170px;
+  float:none;
+  display:list-item;
+  position: relative;
+  padding: 20px;
+}
+.picture{
+  float: left;
+}
+.arrow{
+  width: 11px;
+  height: 11px;
+}
+.logo{
+  width: 100px;
+  height: 40px;
+}
+#submit{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.mainsearch {
+  position: absolute;
+  appearance: none;
+  padding: 10px;
+  margin: 0;
+  opacity: 0;
+  z-index: -1;
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  top: 30px;
+  left: 210px;
+}
+
+
+.search--active{
+  .mainsearch{
+    opacity: 1;
+    z-index: 2;
+  }
+}
+#filter{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 70px;
+  left: 210px;
+  border: 1px solid black;
+  color: black;
+  z-index: 3;
+  display: none;
+  background-color: white;
+  padding: 10px;
+}
+label{
+  margin: 20px;
+}
+.check{
+  padding:0;
+  margin:10px;
+  list-style: none;
+  background-color: white;
+}
+
+.check li{
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  list-style: none;
+  display: inline;
+}
+.sort{
+  padding:0;
+  margin:10px;
+  background-color: white;
+  list-style: none;
+}
+.sort li{
+  list-style: none;
+  display: inline;
+  background-color: white;
+  color: black;
+}
+
+@media only screen and (max-width: 1920px){
+    .menu{
+      display: none;
+    }
+    .mainsearch{
+      width: 800px;
+    }
+    .main li{
+      margin: 0px 60px 0 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 1024px){
+  .menu{
+    display: none;
+  }
+  .mainsearch{
+    width: 530px;
+  }
+  .main li{
+    margin: 0px 20px 0 0;
+  }
+}
+
+@media (max-width: 414px) {
+  #change{
+    display: none;
+  }
+  #fix{
+    display: none;
+  }
+  #right{
+    width: 100%;
+    left: 10px;
+  }
+  #right li{
+    margin-right:50px;
+    margin-left: 40px;
+  }
+  .mainsearch{
+    width: 370px;
+    left: 10px;
+  }
+  #filter{
+    display: none;
+  }
+  .main{
+    padding: 0;
+  }
+  .nav{
+    height: 120px;
+  }
+  #submit{
+    left: 140px;
+    top: -5px;
+  }
+  .check li{
+    display: list-item;
+    margin: 0;
+  }
+  .picture{
+    float: none;
+  }
+  .menu{
+    display: inherit;
+    float: left;
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    top: 10px;
+  }
+
+}
+
+
